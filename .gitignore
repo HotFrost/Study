@@ -250,3 +250,6 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+*.mdf
+Books/Books.Web/App_Data/aspnet-Books.Web-20170407024154.mdf
+Books/Books.Web/App_Data/aspnet-Books.Web-20170407024154_log.ldf

@@ -195,6 +195,10 @@
     <Compile Include="AceDataContext\BooksMigrations\201704071944148_InitialCreate.Designer.cs">
       <DependentUpon>201704071944148_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="AceDataContext\BooksMigrations\201704102257328_Add Url to Books.cs" />
+    <Compile Include="AceDataContext\BooksMigrations\201704102257328_Add Url to Books.Designer.cs">
+      <DependentUpon>201704102257328_Add Url to Books.cs</DependentUpon>
+    </Compile>
     <Compile Include="AceDataContext\BooksMigrations\Configuration.cs" />
     <Compile Include="AceDataContext\IdentityDb.cs" />
     <Compile Include="AceDataContext\IdentityMigrations\201704071942043_InitialCreate.cs" />
@@ -304,6 +308,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AceDataContext\BooksMigrations\201704071944148_InitialCreate.resx">
       <DependentUpon>201704071944148_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AceDataContext\BooksMigrations\201704102257328_Add Url to Books.resx">
+      <DependentUpon>201704102257328_Add Url to Books.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AceDataContext\IdentityMigrations\201704071942043_InitialCreate.resx">
       <DependentUpon>201704071942043_InitialCreate.cs</DependentUpon>
