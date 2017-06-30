@@ -1,0 +1,34 @@
+﻿@model UsersOnlineExample.Models.OnlineUsersModel
+@{
+   
+}
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Get the current users count</title>
+</head>
+<body>
+    Online users:
+    <div id="usersCount"></div>
+    
+    <script>
+        $(function () {
+            // Reference the auto-generated proxy for the hub. 
+            
+            var userActivity = $.connection.userActivityHub;
+
+            // Declare a function that the hub can call back to display messages.
+            userActivity.client.updateUsersOnlineCount = function (count) {
+                // Add the message to the page. 
+                $('#usersCount').text(count);
+            };
+            //-----  this is how we call this function from the server side:
+            //var context = GlobalHost.ConnectionManager.GetHubContext<UserActivityHub>();
+            //context.Clients.All.updateUsersOnlineCount(count);
+
+            $.connection.hub.start();
+        });
+    </script>
+</body>
+</html>
